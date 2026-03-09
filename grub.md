@@ -5,7 +5,7 @@ GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Arch"
 # Here I set pstate to passive mem sleep default to deep and include nvidia settings for a few issues I faced
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet amd_pstate=passive mem_sleep_default=deep nvidia-drm.modeset=1 nvidia.NVreg_PreserveVideoMemoryAllocations=1"
-GRUB_CMDLINE_LINUX="zswap.enabled=0 rootfstype=ext4"
+GRUB_CMDLINE_LINUX="zswap.enabled=1 rootfstype=ext4"
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
